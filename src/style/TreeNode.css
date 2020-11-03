@@ -1,0 +1,47 @@
+.togglable {
+  cursor: pointer;
+  color: #000000;
+}
+
+.noToggle {
+  cursor: pointer;
+}
+
+.noToggle::before {
+  content: "▶ 🖿";
+  display: inline-block;
+  font-size: 15px;
+  margin: 5px;
+  visibility: hidden;
+}
+
+.togglable-down::before,
+.togglable-up::before {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.togglable-down::before {
+  content: "▽ 🗁";
+  display: inline-block;
+  margin: 5px;
+}
+
+.togglable-up::before {
+  content: "▶ 🖿";
+  display: inline-block;
+  margin: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.linked:hover {
+    color: rgb(15, 49, 92);
+}
