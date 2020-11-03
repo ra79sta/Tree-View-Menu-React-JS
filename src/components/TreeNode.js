@@ -53,3 +53,7 @@ const TreeNode = (props) => {
 };
 
 export default TreeNode;
+
+TreeNode.propTypes = {
+  node: PropTypes.object.isRequired
+}
