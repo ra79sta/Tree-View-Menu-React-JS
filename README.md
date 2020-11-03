@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Project Setup
-Download code<br />
+Download code <br />
 Change array in TreeObject folder with your data( you can use multi-level nesting if you wont)<br />
-Play with a code as you wish
+Play with a code as you wish!!!
 
 ## Available Scripts
 
