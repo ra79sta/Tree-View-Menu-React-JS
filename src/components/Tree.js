@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import TreeNode from "./TreeNode";
 
 const Tree = (props) => {
@@ -15,3 +16,7 @@ const Tree = (props) => {
 };
 
 export default Tree;
+
+Tree.propTypes = {
+  node: PropTypes.array.isRequired
+}

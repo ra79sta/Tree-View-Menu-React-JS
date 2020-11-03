@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "../style/TreeNode.css";
 
 const TreeNode = (props) => {
@@ -52,3 +53,7 @@ const TreeNode = (props) => {
 };
 
 export default TreeNode;
+
+TreeNode.propTypes = {
+  node: PropTypes.array.isRequired
+}
