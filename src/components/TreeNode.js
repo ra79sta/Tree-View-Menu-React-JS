@@ -38,15 +38,32 @@ const TreeNode = (props) => {
 
   return (
     <div>
-      <h5 onClick={toggle} className={classNameToggle}>
-        <a
-          href={node.url}
-          target="balnk"
-          className={node.url == null ? "" : "linked"}
-        >
-          {node.title}
-        </a>
-      </h5>
+      <div onClick={toggle}>
+        <div>
+          <div className="nodeElements">
+            {state.visible ? (
+              <div className={classNameToggle}>
+                <i className="fa fa-caret-down"></i>
+                <i className="fa fa-folder-open"></i>
+              </div>
+            ) : (
+              <div className={classNameToggle}>
+                <i className="fa fa-caret-right"></i>
+                <i className="fa fa-folder"></i>
+              </div>
+            )}
+          </div>
+          <div className="nodeElements">
+            <a
+              href={node.url}
+              target="balnk"
+              className={node.url == null ? "" : "linked"}
+            >
+              <h5>{node.title}</h5>
+            </a>
+          </div>
+        </div>
+      </div>
       <ul style={style}>{children}</ul>
     </div>
   );
@@ -55,5 +72,5 @@ const TreeNode = (props) => {
 export default TreeNode;
 
 TreeNode.propTypes = {
-  node: PropTypes.object.isRequired
-}
+  node: PropTypes.object.isRequired,
+};

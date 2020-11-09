@@ -18,5 +18,5 @@ const Tree = (props) => {
 export default Tree;
 
 Tree.propTypes = {
-  node: PropTypes.array.isRequired
-}
+  node: PropTypes.array.isRequired,
+};

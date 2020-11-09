@@ -5,32 +5,23 @@
 
 .noToggle {
   cursor: pointer;
-}
-
-.noToggle::before {
-  content: "▶ 🖿";
-  display: inline-block;
-  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
   margin: 5px;
+  width: 30px;
   visibility: hidden;
 }
 
-.togglable-down::before,
-.togglable-up::before {
-  font-size: 15px;
-  margin-left: 5px;
+.togglable-down,
+.togglable-up {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  width: 30px;
 }
 
-.togglable-down::before {
-  content: "▽ 🗁";
+.nodeElements {
   display: inline-block;
-  margin: 5px;
-}
-
-.togglable-up::before {
-  content: "▶ 🖿";
-  display: inline-block;
-  margin: 5px;
 }
 
 ul {
@@ -38,10 +29,10 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: inherit; 
+  text-decoration: none;
+  color: inherit;
 }
 
 .linked:hover {
-    color: rgb(15, 49, 92);
+  color: rgb(15, 49, 92);
 }
